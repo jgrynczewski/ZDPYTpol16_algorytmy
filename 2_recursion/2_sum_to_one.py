@@ -29,9 +29,8 @@ print(sum_to_one_recursion(5))  # 15
 # T(n) = 2n -> O(n)
 
 # C. Analitycznie
-
 def sum_to_one_analitic(n):
-    return n*(n+1)/2
+    return n*(n+1)/2  # 3
 
 print(sum_to_one_recursion(2))  # 3
 print(sum_to_one_recursion(5))  # 15
