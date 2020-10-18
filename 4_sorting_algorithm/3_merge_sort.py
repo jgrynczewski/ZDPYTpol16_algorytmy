@@ -15,7 +15,7 @@ def merge_sort(a_list):
 
 
 def merge(left, right):
-    """Scala dwie UPORZĄDKOWANE LISTY"""
+    """Scala dwie POSORTOWANE LISTY"""
     result = []
 
     while left and right:
@@ -37,6 +37,3 @@ print(merge_sort([9, 4, 6, 2, 7, 1, 3, 5]))
 
 # Złożonośc obliczeniowa
 # O(nlogn)
-
-# Quicksort
-# Timsort (sort)

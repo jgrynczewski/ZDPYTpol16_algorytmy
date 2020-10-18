@@ -35,8 +35,8 @@ class Queue:
                 self.tail = None
             else:
                 self.head = self.head.get_next_node()
-                self.size -= 1
-                return item_to_remove.get_value()
+            self.size -= 1
+            return item_to_remove.get_value()
         else:
             print("The queue is empty.")
 
@@ -60,9 +60,9 @@ class Queue:
 if __name__ == "__main__":
     q = Queue()
     q.enqueue(5)
-    q.enqueue(23)
-    q.enqueue(1)
-    q.enqueue(3)
+    q.enqueue(23)  # za 5 23
+    q.enqueue(1)  # za 23 1
+    q.enqueue(3)  # za 1 3
 
     print(q.dequeu())
     print(q.dequeu())

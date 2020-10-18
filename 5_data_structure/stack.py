@@ -42,13 +42,13 @@ class Stack:
 if __name__ == "__main__":
     s = Stack()
     s.push(34)
-    s.push(22)
-    s.push(11)
-    s.push(10)
+    s.push(22)  # na 34 22
+    s.push(11)  # na 22 11
+    s.push(10)  # na 11 10
 
     print(s.peak())
     print(s.pop())
     print(s.pop())
     print(s.pop())
     print(s.pop())
-    print(s.pop())
+    s.pop()

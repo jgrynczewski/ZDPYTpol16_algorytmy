@@ -41,7 +41,7 @@ class BST:
             return False
 
 if __name__ == "__main__":
-    s = [1, 3, 4, 5, 6, 7, 89, 356]
+    s = [1, 3, 4, 5, 6]
     bst = BST(s[0])
     for item in s[1:]:
         bst.insert(item)
