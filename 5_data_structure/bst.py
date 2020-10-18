@@ -40,11 +40,29 @@ class BST:
         else:
             return False
 
+    def travers_dfs(self):
+        self._travers_dfs_helper(self.root)
+
+    def _travers_dfs_helper(self, current_node):
+        # pre order dfs (NLR)
+        # in order dfs (LNR)
+        # post order dfs (LRN)
+
+        if current_node:
+            print(current_node.value)  # (N) - zwróć aktualny węzeł # pre-order (NLR)
+            self._travers_dfs_helper(current_node.left)  # (L) - rekursywnie przejdź lewe poddrzewo
+            # print(current_node.value)  # (N) - zwróć aktualny węzeł # in-order (LNR)
+            self._travers_dfs_helper(current_node.right)  # (R) - reukrsywnie przejdź prawe poddrzewo
+            # print(current_node.value)  # (N) - zwróć aktualny węzeł # post-order (LRN)
+
+
 if __name__ == "__main__":
-    s = [1, 3, 4, 5, 6]
+    s = [4, 2, 6, 1, 3, 5, 7]
     bst = BST(s[0])
     for item in s[1:]:
         bst.insert(item)
 
     print(bst.search(6))
     print(bst.search(23))
+    print("#########")
+    bst.travers_dfs()
