@@ -28,7 +28,7 @@ def fib_memo(n):
 from functools import lru_cache
 
 @lru_cache(maxsize=100)
-def fib(n):
+def fib_memo2(n):
     if n==0:
         return 0
     if n==1:
@@ -37,4 +37,4 @@ def fib(n):
 
 
 for i in range(1, 201):
-    print(f"fib({i}) = {fib_memo(i)}")
+    print(f"fib({i}) = {fib_memo2(i)}")
