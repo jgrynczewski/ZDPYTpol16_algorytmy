@@ -33,7 +33,7 @@ def fib_memo2(n):
         return 0
     if n==1:
         return 1
-    return fib(n-1)+fib(n-2)
+    return fib_memo2(n-1)+fib_memo2(n-2) # Błąd
 
 
 for i in range(1, 201):
